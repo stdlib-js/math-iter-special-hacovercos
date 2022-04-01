@@ -1,0 +1,47 @@
+{
+  "name": "@stdlib/math-iter-special-hacovercos",
+  "version": "0.0.0",
+  "description": "Create an iterator which computes the half-value coversed cosine for each iterated value.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-iter-special-hacovercos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "hacovercos",
+    "hacovercosin",
+    "hacovercosine",
+    "versed cosine",
+    "half-value",
+    "coversed",
+    "cosinus versus",
+    "hacovercosinus",
+    "hcc",
+    "versed",
+    "cosine",
+    "cos",
+    "sine",
+    "sin",
+    "trig",
+    "trigonometry",
+    "radians",
+    "angle",
+    "iterator",
+    "iterable",
+    "iterate"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
