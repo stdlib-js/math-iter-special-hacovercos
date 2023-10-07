@@ -45,14 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-special-hacovercos
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterHacovercos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-hacovercos@esm/index.mjs';
+var iterHacovercos = require( '@stdlib/math-iter-special-hacovercos' );
 ```
 
 #### iterHacovercos( iterator )
@@ -60,7 +76,7 @@ import iterHacovercos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-spec
 Returns an [iterator][mdn-iterator-protocol] which iteratively computes the [half-value coversed cosine][@stdlib/math/base/special/hacovercos].
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var it = iterHacovercos( array2iterator( [ 1.57, 0.785 ] ) );
 // returns <Object>
@@ -104,14 +120,9 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import iterHacovercos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-hacovercos@esm/index.mjs';
+```javascript
+var uniform = require( '@stdlib/random-iter-uniform' );
+var iterHacovercos = require( '@stdlib/math-iter-special-hacovercos' );
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( 0.0, 6.28, {
@@ -131,10 +142,6 @@ while ( true ) {
     }
     console.log( v.value );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -174,7 +181,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -238,11 +245,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/hacovercos]: https://github.com/stdlib-js/math-base-special-hacovercos/tree/esm
+[@stdlib/math/base/special/hacovercos]: https://github.com/stdlib-js/math-base-special-hacovercos
 
-[@stdlib/math/iter/special/covercos]: https://github.com/stdlib-js/math-iter-special-covercos/tree/esm
+[@stdlib/math/iter/special/covercos]: https://github.com/stdlib-js/math-iter-special-covercos
 
-[@stdlib/math/iter/special/hacoversin]: https://github.com/stdlib-js/math-iter-special-hacoversin/tree/esm
+[@stdlib/math/iter/special/hacoversin]: https://github.com/stdlib-js/math-iter-special-hacoversin
 
 <!-- </related-links> -->
 
